@@ -236,7 +236,7 @@ const Hero = () => {
             <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96">
               <div className="absolute inset-0 rounded-full overflow-hidden border-4 border-primary/20 shadow-xl neon-border">
                 <Image
-                  src="/placeholder.svg?height=400&width=400"
+                  src="/images/elvis-avatar.png"
                   alt="Elvis - Full-Stack Developer"
                   fill
                   className="object-cover"

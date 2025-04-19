@@ -23,84 +23,114 @@ export default async function Image() {
         width: "100%",
         height: "100%",
         display: "flex",
-        flexDirection: "column",
+        flexDirection: "row",
         alignItems: "center",
-        justifyContent: "center",
+        justifyContent: "space-between",
         padding: 48,
       }}
     >
       <div
         style={{
-          backgroundImage: "linear-gradient(to right, #8b5cf6, #3b82f6)",
-          backgroundClip: "text",
-          color: "transparent",
-          fontSize: 64,
-          fontWeight: "bold",
-          marginBottom: 24,
-        }}
-      >
-        Enya Elvis
-      </div>
-      <div
-        style={{
-          fontSize: 36,
-          color: "white",
-          marginBottom: 48,
-          textAlign: "center",
-        }}
-      >
-        Full-Stack Developer & AI Enthusiast
-      </div>
-      <div
-        style={{
           display: "flex",
-          gap: 16,
-          marginTop: 24,
+          flexDirection: "column",
+          alignItems: "flex-start",
+          justifyContent: "center",
+          width: "60%",
         }}
       >
         <div
           style={{
-            background: "rgba(255, 255, 255, 0.1)",
-            padding: "8px 16px",
-            borderRadius: 8,
-            color: "white",
-            fontSize: 24,
+            backgroundImage: "linear-gradient(to right, #8b5cf6, #3b82f6)",
+            backgroundClip: "text",
+            color: "transparent",
+            fontSize: 64,
+            fontWeight: "bold",
+            marginBottom: 24,
           }}
         >
-          React
+          Enya Elvis
         </div>
         <div
           style={{
-            background: "rgba(255, 255, 255, 0.1)",
-            padding: "8px 16px",
-            borderRadius: 8,
+            fontSize: 36,
             color: "white",
-            fontSize: 24,
+            marginBottom: 48,
+            textAlign: "left",
           }}
         >
-          Next.js
+          Full-Stack Developer & AI Enthusiast
         </div>
         <div
           style={{
-            background: "rgba(255, 255, 255, 0.1)",
-            padding: "8px 16px",
-            borderRadius: 8,
-            color: "white",
-            fontSize: 24,
+            display: "flex",
+            gap: 16,
+            marginTop: 24,
           }}
         >
-          Node.js
+          <div
+            style={{
+              background: "rgba(255, 255, 255, 0.1)",
+              padding: "8px 16px",
+              borderRadius: 8,
+              color: "white",
+              fontSize: 24,
+            }}
+          >
+            React
+          </div>
+          <div
+            style={{
+              background: "rgba(255, 255, 255, 0.1)",
+              padding: "8px 16px",
+              borderRadius: 8,
+              color: "white",
+              fontSize: 24,
+            }}
+          >
+            Next.js
+          </div>
+          <div
+            style={{
+              background: "rgba(255, 255, 255, 0.1)",
+              padding: "8px 16px",
+              borderRadius: 8,
+              color: "white",
+              fontSize: 24,
+            }}
+          >
+            AI
+          </div>
         </div>
+      </div>
+      <div
+        style={{
+          width: "250px",
+          height: "250px",
+          borderRadius: "50%",
+          overflow: "hidden",
+          border: "4px solid rgba(139, 92, 246, 0.5)",
+          boxShadow: "0 0 30px rgba(139, 92, 246, 0.5)",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          position: "relative",
+        }}
+      >
+        {/* Avatar placeholder - in production this would use the actual image */}
         <div
           style={{
-            background: "rgba(255, 255, 255, 0.1)",
-            padding: "8px 16px",
-            borderRadius: 8,
+            width: "100%",
+            height: "100%",
+            backgroundColor: "#312e81",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
             color: "white",
-            fontSize: 24,
+            fontSize: 36,
+            fontWeight: "bold",
           }}
         >
-          AI
+          EE
         </div>
       </div>
     </div>,

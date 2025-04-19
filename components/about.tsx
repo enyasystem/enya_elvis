@@ -82,7 +82,7 @@ const About = () => {
                 <div className="relative">
                   <div className="w-full h-[400px] relative rounded-lg overflow-hidden shadow-lg neon-border">
                     <Image
-                      src="/placeholder.svg?height=800&width=600"
+                      src="/images/elvis-avatar.png"
                       alt="Elvis - Professional Photo"
                       fill
                       className="object-cover"
@@ -163,8 +163,8 @@ const About = () => {
                       <>
                         <div className="relative w-32 h-32 rounded-full overflow-hidden border-4 border-primary/30 mb-4">
                           <Image
-                            src={githubData.avatar_url || "/placeholder.svg"}
-                            alt={githubData.name || "GitHub Profile"}
+                            src="/images/elvis-avatar.png"
+                            alt={githubData?.name || "GitHub Profile"}
                             fill
                             className="object-cover"
                           />

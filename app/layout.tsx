@@ -45,9 +45,9 @@ export const metadata: Metadata = {
     siteName: "Enya Elvis Portfolio",
     images: [
       {
-        url: "/og-image.jpg",
-        width: 1200,
-        height: 630,
+        url: "/images/elvis-avatar.png",
+        width: 400,
+        height: 400,
         alt: "Enya Elvis - Full-Stack Developer & AI Enthusiast",
       },
     ],
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
     description:
       "Professional portfolio of Enya Elvis, a full-stack developer specializing in JavaScript, React, Node.js, and AI technologies.",
     creator: "@enyasystem",
-    images: ["/og-image.jpg"],
+    images: ["/images/elvis-avatar.png"],
   },
   robots: {
     index: true,
@@ -70,6 +70,11 @@ export const metadata: Metadata = {
       "max-image-preview": "large",
       "max-snippet": -1,
     },
+  },
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/images/elvis-avatar.png",
   },
     generator: 'v0.dev'
 }
