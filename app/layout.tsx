@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     siteName: "Enya Elvis Portfolio",
     images: [
       {
-        url: "/images/elvis-avatar.png",
+        url: "/whatsapp-preview.png",
         width: 400,
         height: 400,
         alt: "Enya Elvis - Full-Stack Developer & AI Enthusiast",
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
     description:
       "Professional portfolio of Enya Elvis, a full-stack developer specializing in JavaScript, React, Node.js, and AI technologies.",
     creator: "@enyasystem",
-    images: ["/images/elvis-avatar.png"],
+    images: ["/whatsapp-preview.png"],
   },
   robots: {
     index: true,
@@ -72,9 +72,12 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: "/favicon.ico",
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/whatsapp-preview.png", type: "image/png", sizes: "400x400" },
+    ],
     shortcut: "/favicon.ico",
-    apple: "/images/elvis-avatar.png",
+    apple: "/whatsapp-preview.png",
   },
     generator: 'v0.dev'
 }
@@ -86,6 +89,29 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        {/* Manual OG tags to ensure WhatsApp compatibility */}
+        <meta property="og:title" content="Enya Elvis - Full-Stack Developer & AI Enthusiast" />
+        <meta
+          property="og:description"
+          content="Professional portfolio of Enya Elvis, a full-stack developer specializing in JavaScript, React, Node.js, and AI technologies."
+        />
+        <meta property="og:image" content="https://enyaelvis.dev/whatsapp-preview.png" />
+        <meta property="og:image:width" content="400" />
+        <meta property="og:image:height" content="400" />
+        <meta property="og:image:alt" content="Enya Elvis - Full-Stack Developer" />
+        <meta property="og:url" content="https://enyaelvis.dev" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Enya Elvis Portfolio" />
+
+        {/* WhatsApp specific meta tags */}
+        <meta property="og:image:secure_url" content="https://enyaelvis.dev/whatsapp-preview.png" />
+
+        {/* Favicon links */}
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/whatsapp-preview.png" type="image/png" sizes="400x400" />
+        <link rel="apple-touch-icon" href="/whatsapp-preview.png" />
+      </head>
       <body className={`${inter.variable} ${poppins.variable} font-sans`}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
           <Header />
